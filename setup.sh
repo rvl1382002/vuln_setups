@@ -47,13 +47,6 @@ check_cron_exists() {
     fi
 }
 
-# Function to run the oled.py program
-run_oled_script() {
-    echo "Running oled.py script in the background..."
-    nohup python3 "$OLED_PY_PATH" > /dev/null 2>&1 &
-    echo "oled.py script started."
-}
-
 # Main setup function
 main() {
     echo "Starting setup for OLED and hack check..."
